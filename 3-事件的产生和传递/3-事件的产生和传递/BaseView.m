@@ -21,9 +21,9 @@
     NSLog(@"%@-touchesBegan",[self class]);
     [super touchesBegan:touches withEvent:event];
 }
-//-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
-//    NSLog(@"%@-hitTest",[self class]);
-//    [super hitTest:point withEvent:event];
-//    return self;
-//}
+-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    NSLog(@"%@-hitTest",[self class]);
+    [super hitTest:point withEvent:event];
+    return self;
+}
 @end
