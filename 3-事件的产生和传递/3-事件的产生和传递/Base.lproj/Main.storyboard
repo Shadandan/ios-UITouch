@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="BGView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLe-cq-lAh" customClass="LightBlueView">
+                                <rect key="frame" x="143" y="145" width="314" height="309"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FaC-71-nLr" customClass="RedView">
+                                        <rect key="frame" x="76.5" y="45.5" width="161" height="109"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="109" id="jRj-Fh-tdN"/>
+                                            <constraint firstAttribute="width" constant="161" id="xWC-Su-5q4"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0E-6P-anp" customClass="BlueView">
+                                        <rect key="frame" x="44" y="178" width="240" height="111"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86941437259999998" green="1" blue="0.96276909060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="b0E-6P-anp" secondAttribute="bottom" constant="20" id="2OO-5l-Ebr"/>
+                                    <constraint firstItem="FaC-71-nLr" firstAttribute="centerX" secondItem="gLe-cq-lAh" secondAttribute="centerX" id="CzO-IV-8XD"/>
+                                    <constraint firstItem="b0E-6P-anp" firstAttribute="top" secondItem="FaC-71-nLr" secondAttribute="bottom" constant="23.5" id="E5f-Rp-EQh"/>
+                                    <constraint firstItem="b0E-6P-anp" firstAttribute="leading" secondItem="gLe-cq-lAh" secondAttribute="leading" constant="44" id="ESU-ID-nub"/>
+                                    <constraint firstItem="FaC-71-nLr" firstAttribute="bottom" secondItem="gLe-cq-lAh" secondAttribute="centerY" id="I4p-0j-ASf"/>
+                                    <constraint firstAttribute="height" constant="309" id="aX5-jI-FaG"/>
+                                    <constraint firstAttribute="trailing" secondItem="b0E-6P-anp" secondAttribute="trailing" constant="30" id="g9J-LI-WR7"/>
+                                    <constraint firstAttribute="width" constant="314" id="hlA-Es-B6A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gLe-cq-lAh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jGg-ET-Afk"/>
+                            <constraint firstItem="gLe-cq-lAh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yhG-5m-Ldn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="304"/>
+        </scene>
+    </scenes>
+</document>
